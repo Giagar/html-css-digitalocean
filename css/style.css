@@ -1,0 +1,29 @@
+/* ----COMMON */
+.my .bg-white {
+  background: white;
+}
+
+nav {
+  background: #FFFFFF;
+  height: 50px;
+}
+
+/* ----header */
+.my .jumbotron {
+  /* height: 250px; */
+  background: url("../img/sfondo-pesci.svg");
+}
+
+header form .btn:first-of-type {
+  background: #5b9bfa;
+  color: white;
+}
+
+header form .google-btn {
+  position: relative;
+}
+
+header form .google-logo {
+  position: absolute;
+  left: 10px;
+}
