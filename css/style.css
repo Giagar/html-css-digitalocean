@@ -1,4 +1,8 @@
 /* ----COMMON */
+* {
+  /* box-sizing: border-box; */
+}
+
 .my .bg-white {
   background: white;
 }
@@ -26,4 +30,10 @@ header form .google-btn {
 header form .google-logo {
   position: absolute;
   left: 10px;
+}
+
+/* ----section: companies */
+.companies .images-container img {
+  width: 100%;
+  /* padding: 0 5px; */
 }
