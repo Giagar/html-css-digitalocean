@@ -175,3 +175,14 @@ header form .google-logo {
 .second-slider .item-content img {
   width: 100%;
 }
+
+/* ----section: get-started */
+.get-started {
+  background: linear-gradient(180deg, #0945b7, #052798);
+  color: white;
+}
+
+.get-started .btn {
+  color: #3284fb;
+  background: white;
+}
