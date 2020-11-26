@@ -11,9 +11,12 @@ nav {
   background: #FFFFFF;
   height: 50px;
 }
+.my .kill-jumbotron-margin-bottom {
+  margin-bottom: -30px;
+}
 
 /* ----header */
-.my .jumbotron {
+.my header .jumbotron {
   /* height: 250px; */
   background: url("../img/sfondo-pesci.svg");
 }
@@ -33,7 +36,22 @@ header form .google-logo {
 }
 
 /* ----section: companies */
+.companies {
+  background: #f3f5f9;
+}
+
 .companies .images-container img {
   width: 100%;
   /* padding: 0 5px; */
+}
+
+/* ----section: deploy */
+.deploy {
+  background: white;
+}
+
+.deploy li {
+  list-style: none;
+  border-left: 1px solid lightgray;
+  padding-left: 10px;
 }
