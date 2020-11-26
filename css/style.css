@@ -64,12 +64,12 @@ header form .google-logo {
   padding-left: 10px;
 }
 
-/* ----section: first-slider */
-.first-slider .item.active {
+/* ----my-slider */
+.my-slider .item.active {
   padding: 0 20px;
 }
 
-.first-slider {
+.my-slider {
   background: #f3f5f9;
 }
 
@@ -80,42 +80,42 @@ header form .google-logo {
 }
 
 /* container immagine slide */
-.first-slider .carousel-inner>.item {
+.my-slider .carousel-inner>.item {
   width: 80%;
   margin: 0 auto;
 }
 
 /* frecce slide */
-.first-slider a.left.carousel-control,
-.first-slider a.right.carousel-control {
+.my-slider a.left.carousel-control,
+.my-slider a.right.carousel-control {
   opacity: 1;
   color: #051d4c;
   background: transparent;
 }
 
-.first-slider a.left.carousel-control {
+.my-slider a.left.carousel-control {
   color: #707b96;
 }
 
-.first-slider a.right.carousel-control {
+.my-slider a.right.carousel-control {
   color: #051d4c;
 }
 
 /* pallini slide */
-.first-slider .carousel-indicators {
+.my-slider .carousel-indicators {
   position: relative;
 }
 
-.first-slider .carousel-indicators li {
+.my-slider .carousel-indicators li {
   border: 1px solid #146cf9;
 }
 
-.first-slider .carousel-indicators li.my-active {
+.my-slider .carousel-indicators li.my-active {
   background: #146cf9;
 }
 
 /* didascalia slide */
-.first-slider .carousel-caption {
+.my-slider .carousel-caption {
   color: #051d4c;
   position: relative;
   left: 0;
@@ -128,15 +128,16 @@ header form .google-logo {
 }
 
 @media screen and (max-width: 768px) {
-  .first-slider a.left.carousel-control,
-  .first-slider a.right.carousel-control {
+  .my-slider a.left.carousel-control,
+  .my-slider a.right.carousel-control {
     visibility: hidden;
   }
 }
 
+/* ----section: first-slider */
 @media screen and (min-width: 0px) and (max-width: 992px) {
 
-  .first-slider .carousel-indicators {
+  .my-slider.first-slider .carousel-indicators {
     margin-top: 70px;
   }
 }
@@ -162,6 +163,15 @@ header form .google-logo {
   text-align: right;
 }
 
-.section-table table td:last-child a{
+.section-table table td:last-child a {
   color: #23d4d1;
+}
+
+/* ----section: second slider */
+.second-slider .item-content {
+  background: white;
+}
+
+.second-slider .item-content img {
+  width: 100%;
 }
