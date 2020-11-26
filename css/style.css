@@ -7,10 +7,6 @@
   background: white;
 }
 
-nav {
-  background: #FFFFFF;
-  height: 50px;
-}
 .my .kill-jumbotron-margin-bottom {
   margin-bottom: -30px;
 }
@@ -21,6 +17,83 @@ a {
 
 .color-white {
   color: white;
+}
+
+.my-md-visible {
+  display: none;
+}
+
+.my-xs-visible {
+  display: block;
+}
+
+.float-left {
+  float: left
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ----STYLE */
+/* ----navbar */
+nav {
+  background: #FFFFFF;
+  height: 50px;
+}
+
+nav [class*="-menu"] li{
+  display: inline-block;
+  padding: 0 7px;
+  line-height: 50px;
+}
+
+nav .logo-container {
+  width: 15%;
+  line-height: 50px;
+}
+
+nav .logo-container img {
+  width: 145px;
+  vertical-align: sub;
+}
+
+nav .left-menu {
+  width: 50%;
+  text-align: center;
+}
+
+nav .right-menu {
+  width: 35%;
+  text-align: right;
+}
+
+nav .right-menu button {
+  border: 1px solid #7d9ffc;
+  background: white;
+  color: #7d9ffc;
+}
+
+nav .sandwich-container {
+  line-height: 50px;
+  font-size: 22px;
+  color: #2b88f9
+}
+
+@media screen and (min-width: 992px) {
+
+  .my-xs-visible {
+    display: none;
+  }
+  .my-md-visible {
+    display: block;
+  }
 }
 
 /* ----header */
