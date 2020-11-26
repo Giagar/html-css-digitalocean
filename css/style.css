@@ -55,3 +55,77 @@ header form .google-logo {
   border-left: 1px solid lightgray;
   padding-left: 10px;
 }
+
+/* ----section: first-slider */
+.first-slider .item.active {
+  padding: 0 20px;
+}
+
+.first-slider {
+  background: #f3f5f9;
+  /* height: 500px; */
+}
+
+.my-carousel {
+  position: relative;
+  /* border: 1px solid gray; */
+}
+
+.first-slider .carousel.slide {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.first-slider .carousel-inner>.item {
+  width: 80%;
+  margin: 0 auto;
+  /* background: transparent; */
+}
+
+.first-slider a.left.carousel-control, .first-slider a.left.carousel-control, first-slider a.left.carousel-control, .first-slider a.right.carousel-control {
+  opacity: 1;
+  color: #051d4c;
+  background: transparent;
+}
+
+.first-slider a.left.carousel-control {
+  color: #707b96;
+}
+
+.first-slider a.right.carousel-control {
+  color: #051d4c;
+}
+
+.first-slider .carousel-indicators {
+  bottom: 0px;
+}
+
+.first-slider .carousel-indicators li {
+  border: 1px solid #146cf9;
+}
+
+.first-slider .carousel-indicators li.my-active {
+  background: #146cf9;
+}
+
+.first-slider .carousel-caption {
+  color: #051d4c;
+  /* z-index: 140; */
+  /* transform: translateY(70px); */
+  /* bottom: -80px; */
+  position: relative;
+  left: 0;
+  top: 10px;
+  margin-bottom: 80px;
+  max-width: 40%;
+  margin-right: auto;
+  margin-left: auto;
+  text-shadow: none;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .first-slider .carousel-caption {
+    margin-bottom: 20px;
+  }
+}
