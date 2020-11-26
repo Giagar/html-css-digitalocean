@@ -63,12 +63,10 @@ header form .google-logo {
 
 .first-slider {
   background: #f3f5f9;
-  /* height: 500px; */
 }
 
 .my-carousel {
   position: relative;
-  /* border: 1px solid gray; */
 }
 
 .first-slider .carousel.slide {
@@ -79,7 +77,6 @@ header form .google-logo {
 .first-slider .carousel-inner>.item {
   width: 80%;
   margin: 0 auto;
-  /* background: transparent; */
 }
 
 .first-slider a.left.carousel-control, .first-slider a.left.carousel-control, first-slider a.left.carousel-control, .first-slider a.right.carousel-control {
@@ -97,7 +94,7 @@ header form .google-logo {
 }
 
 .first-slider .carousel-indicators {
-  bottom: 0px;
+  position: relative;
 }
 
 .first-slider .carousel-indicators li {
@@ -110,13 +107,9 @@ header form .google-logo {
 
 .first-slider .carousel-caption {
   color: #051d4c;
-  /* z-index: 140; */
-  /* transform: translateY(70px); */
-  /* bottom: -80px; */
   position: relative;
   left: 0;
   top: 10px;
-  margin-bottom: 80px;
   max-width: 40%;
   margin-right: auto;
   margin-left: auto;
@@ -124,8 +117,9 @@ header form .google-logo {
   font-weight: 500;
 }
 
-@media screen and (min-width: 768px) {
-  .first-slider .carousel-caption {
-    margin-bottom: 20px;
+@media screen and (min-width: 0px) and (max-width: 992px) {
+
+  .first-slider .carousel-indicators {
+    margin-top: 70px;
   }
 }
