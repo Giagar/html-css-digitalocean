@@ -19,6 +19,10 @@ a {
   color: #146cf9;
 }
 
+.color-white {
+  color: white;
+}
+
 /* ----header */
 .my header .jumbotron {
   /* height: 250px; */
@@ -138,3 +142,26 @@ header form .google-logo {
 }
 
 /* ----section: table */
+.section-table {
+  background: linear-gradient(180deg, #0b4cc2, #042597);
+}
+
+.section-table .table-responsive {
+  border: none;
+}
+
+.section-table table.table {
+  border: none !important;
+}
+
+.section-table table tr:first-child td {
+  border: none;
+}
+
+.section-table table td:last-child {
+  text-align: right;
+}
+
+.section-table table td:last-child a{
+  color: #23d4d1;
+}
