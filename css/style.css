@@ -74,6 +74,28 @@ nav .right-menu {
   text-align: right;
 }
 
+nav label {
+  font-weight: normal;
+}
+
+nav select {
+  border: none;
+  width: 12px;
+}
+
+nav label, nav select:hover {
+  cursor: pointer;
+}
+
+nav a {
+  color: inherit;
+}
+
+nav li a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 nav .right-menu button {
   border: 1px solid #7d9ffc;
   background: white;
