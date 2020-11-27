@@ -10,11 +10,12 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <div class="wrapper my">
+  <!-- !togliere my! -->
+  <div class="custom wrapper my">
 
     <!-- navbar -->
     <nav>
-      <div class="container">
+      <div class="container important-color">
         <div class="logo-container float-left">
           <img src="./img/digital-ocean-logo.png" alt="#">
         </div>
@@ -53,26 +54,35 @@
         <div class="container">
 
           <div class="row">
-            <div class="col-xs-12 col-sm-6">
-              <h1 class="my-white-color">The simplest cloud platform for developers &teams</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam est nisi optio, earum, alias eos et at aliquid, recusandae illo dignissimos repudiandae, deserunt tenetur unde in! Ad labore adipisci est.</p>
+            <div class="col-xs-12 col-sm-7 title-container">
+              <h1 class="white-color">The simplest cloud platform for developers & teams</h1>
+              <p>Deploy, mangae, and scale cloud applications faster and more dfficiently on DigitalOcean. We make managing infrastrudture easy for teams and businesses, whether you're running one virtual machine or ten thousand.</p>
             </div>
 
-            <div class="col-xs-12 col-sm-6 bg-white">
-              <h2 class="my-important-color">Deploy your app in seconds. <br>
-                <span>Get started now.</span>
-              </h2>
-              <form>
-                <div class="form-group">
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                </div>
-                <div class="form-group">
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <button type="button" class="btn btn-block">Create your account</button>
-                <button type="button" class="btn btn-default btn-block google-btn"><i class="google-logo">G</i>Sign up with google</button>
-                <div class="terms">By signing up you agree to the <a>Term of service</a>.</div>
-              </form>
+            <div class="col-xs-12 col-sm-5 form-container text-center">
+              <div class="inner-container bg-white">
+                <h2 class="my-important-color bg-white">Deploy your app in seconds. <br>
+                <span class="highlight-color">Get started now.</span>
+                </h2>
+                <form>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                  <button type="button" class="btn btn-block">Create your account</button>
+                  <button type="button" class="btn btn-default btn-block google-btn">
+                    <!-- <div class="google-logo-container">
+                      <img src="./img/google-logo.svg" alt="#">
+                    </div> -->
+
+
+                    Sign up with google</button>
+                  <div class="terms">By signing up you agree to the <a href="#">Term of service</a>.</div>
+                </form>
+              </div>
+
             </div>
           </div>
 

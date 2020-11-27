@@ -66,27 +66,27 @@ list #A6ADBD;
 
  */
 
-.my .bg-white {
+.custom .bg-white {
   background: white;
 }
 
-.my .kill-jumbotron-margin-bottom {
+.custom .kill-jumbotron-margin-bottom {
   margin-bottom: -30px;
 }
 
-.my-important-color {
-  color: #031C4E !important;
+.custom .important-color {
+  color: #031C4E;
 }
 
-.my-highlight-color {
-  color: #016AFF !important;
+.custom .highlight-color {
+  color: #016AFF;
 }
 
-.my-subsection-color {
-  color: #B1B8C5 !important;
+.custom .subsection-color {
+  color: #B1B8C5;
 }
 
-.my-white-color {
+.custom .white-color {
   color: white;
 }
 
@@ -125,7 +125,7 @@ nav {
   height: 50px;
 }
 
-nav [class*="-menu"] li{
+nav [class*="-menu"] li {
   display: inline-block;
   padding: 0 7px;
   line-height: 50px;
@@ -149,6 +149,7 @@ nav .left-menu {
 nav .right-menu {
   width: 35%;
   text-align: right;
+  color:
 }
 
 nav label {
@@ -208,32 +209,103 @@ google button #A3A3A3;
 terms link #4891FF;
  */
 
-.my header .jumbotron {
+.custom header .jumbotron {
   /* height: 250px; */
   background: url("../img/bg-home.jpg") bottom;
   background-size: cover;
 }
 
-header h1 {
-  /* color: white; */
+header .row {
+  padding-bottom: 30px;
 }
 
-header [class*="col-"]:first-child p {
+header .title-container h1 {
+  font-size: 30px;
+}
+
+header .title-container p {
   color: #BBCBFE;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+header .form-container {
+  /* padding: 15px; */
+}
+
+header .form-container .inner-container {
+  padding: 15px;
+  border-radius: 4px;
+}
+
+header .form-container h2 {
+  font-size: 21px;
+  line-height: 1.4;
+}
+
+header .form-container h2 span {
+  font-size: 21px;
+  line-height: 1.4;
+}
+
+.custom header .form-container .form-group {
+  margin-bottom: 8px;
+}
+
+header .form-container input {
+  border-color: #EEEEEE;
+  box-shadow: none;
+}
+
+header .form-container button {
+  font-size: 13px;
+  font-weight: 500;
 }
 
 header form .btn:first-of-type {
   background: #5b9bfa;
   color: white;
+  margin-bottom: 8px;
 }
 
 header form .google-btn {
   position: relative;
+  border: none;
+  box-shadow: 1px 1px 2px 0px #ddd8d8;
+  color: #626262;
 }
-
-header form .google-logo {
+/*
+header form .google-logo-container {
   position: absolute;
   left: 10px;
+  top: 0;
+}
+
+header form .google-logo-container img {
+  height: 25px;
+  vertical-align: sub;
+} */
+
+header form .google-btn::before {
+  content: url("../img/google-logo.svg");
+  height: 24px;
+  /* width: 50px; */
+  background: green;
+}
+
+header .terms {
+  padding: 10px;
+  font-size: 12px;
+}
+
+header .terms a {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 992px) {
+  header .title-container h1 {
+    font-size: 50px;
+  }
 }
 
 /* ----section: companies */
