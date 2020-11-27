@@ -264,3 +264,11 @@ header form .google-logo {
   color: #3284fb;
   background: white;
 }
+
+/* ----footer */
+footer ul {
+  width: 100%;
+  padding-left: 0;
+  list-style: none;
+  /* text-align: left; */
+}
