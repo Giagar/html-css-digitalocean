@@ -233,6 +233,10 @@ header form .google-logo {
   border: none;
 }
 
+.section-table table td:nth-child(2) {
+  color: #afbde4;
+}
+
 .section-table table td:last-child {
   text-align: right;
 }
