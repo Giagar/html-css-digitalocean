@@ -201,6 +201,7 @@ header form .google-logo {
   font-weight: 500;
 }
 
+/* !togli e metti hidden-xs su html! */
 @media screen and (max-width: 768px) {
   .my-slider a.left.carousel-control,
   .my-slider a.right.carousel-control {
@@ -266,9 +267,87 @@ header form .google-logo {
 }
 
 /* ----footer */
+footer {
+  position: relative; /* per posizionare .help */
+  background: #051e4d;
+}
+
 footer ul {
   width: 100%;
   padding-left: 0;
   list-style: none;
   /* text-align: left; */
+}
+
+footer .help {
+  position: absolute;
+  bottom: 5px;
+  left: 5%;
+  display: inline-block;
+}
+
+footer .help-inner-container {
+  position: relative;
+  background: yellow;
+  /* width: 360px; */
+  /* height: 50px; */
+}
+
+/* linguetta fumetto */
+footer .help .chat::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  height: 10px;
+  width: 10px;
+  background: gray;
+  left: 300px;
+  top: 30px;
+}
+/* /linguetta fumetto */
+
+footer .help .chat {
+  height: 50px;
+  width: 300px;
+  background: orange;
+}
+
+footer .help .fish {
+  width: 50px;
+  height: 50px;
+  /* background: lightblue; */
+}
+
+footer .help .fish img {
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+
+  footer .help {
+    background: green;
+    left: auto;
+    right: 2%;
+    bottom: 5px;
+  }
+
+  footer .help-inner-container {
+    width: 360px;
+    height: 50px;
+  }
+
+  footer .help .fish, .help .chat {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+  }
+
+  footer .help .fish {
+    right: 0;
+  }
+
+  footer .help .chat {
+    left: 0;
+  }
+
 }
