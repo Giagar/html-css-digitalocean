@@ -75,24 +75,25 @@ list #A6ADBD;
 }
 
 .my-important-color {
-  color: #031C4E;
+  color: #031C4E !important;
 }
 
 .my-highlight-color {
-  color: #016AFF;
+  color: #016AFF !important;
 }
 
 .my-subsection-color {
-  color: #B1B8C5;
+  color: #B1B8C5 !important;
+}
+
+.my-white-color {
+  color: white;
 }
 
 a {
   color: #146cf9;
 }
 
-.color-white {
-  color: white;
-}
 
  /* controlla se classe già presente in bootsrap (xs-hidden) */
 .my-md-visible {
@@ -195,6 +196,18 @@ nav .sandwich-container {
 }
 
 /* ----header */
+/*
+header
+h1 #FFFFFF;
+p #BBCBFE;
+form
+title h2 #031C4E; mic
+getstarted #016AFF; mhc
+placheolder #757575;
+google button #A3A3A3;
+terms link #4891FF;
+ */
+
 .my header .jumbotron {
   /* height: 250px; */
   background: url("../img/bg-home.jpg") bottom;
@@ -202,7 +215,11 @@ nav .sandwich-container {
 }
 
 header h1 {
-  color: white
+  /* color: white; */
+}
+
+header [class*="col-"]:first-child p {
+  color: #BBCBFE;
 }
 
 header form .btn:first-of-type {
