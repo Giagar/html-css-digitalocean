@@ -31,7 +31,7 @@ p #5C6A88;
 list #75809A;
 list border #CCCCCC;
 h3 #46567A;
-p #B1B8C5; msc
+p #5C6B89; fomer msc
 
 first-slider
 h2 #031C4E; mic
@@ -338,10 +338,35 @@ header .terms a {
   background: white;
 }
 
+.deploy .title-container p {
+  color: #5C6A88;
+}
+
+.deploy .container .row.inner-container {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
 .deploy li {
   list-style: none;
-  border-left: 1px solid lightgray;
+  border-left: 1px solid #CCCCCC;
   padding-left: 10px;
+  color: #75809A;
+}
+
+.deploy .row:last-child img {
+  width: 35px;
+}
+
+.custom .deploy .row:last-child h3 {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #46567A;
+}
+
+.custom .deploy .row:last-child p {
+  padding-bottom: 20px;
+  color: #5C6B89;
 }
 
 /* ----my-slider */
