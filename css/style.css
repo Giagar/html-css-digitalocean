@@ -578,7 +578,11 @@ link #016AFF; mhc
   padding: 15px 0 0;
 }
 
-.second-slider .quotation-author {
+.second-slider .quote {
+  color: #5C6A88;
+}
+
+.second-slider .quote-author {
   padding-bottom: 20px;
 }
 
