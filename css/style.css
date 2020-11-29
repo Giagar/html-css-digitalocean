@@ -338,20 +338,43 @@ header .terms a {
   background: white;
 }
 
+.deploy .title-container {
+  padding-top: 60px;
+}
+
 .deploy .title-container p {
   color: #5C6A88;
+  font-size: 18px;
 }
 
 .deploy .container .row.inner-container {
+  padding-left: 15px; /*per recuperare il margin tolto con la doppia row*/
   padding-top: 45px;
   padding-bottom: 45px;
 }
 
-.deploy li {
+.custom .deploy .row.inner-container>[class*="col-"]:first-child {
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.custom .deploy ul {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.custom .deploy li {
   list-style: none;
   border-left: 1px solid #CCCCCC;
   padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
   color: #75809A;
+  font-size: 20px;
+}
+
+.deploy li:last-child {
+  padding-bottom: 5px;
 }
 
 .deploy .row:last-child img {
@@ -367,6 +390,19 @@ header .terms a {
 .custom .deploy .row:last-child p {
   padding-bottom: 20px;
   color: #5C6B89;
+}
+
+@media screen and (min-width: 768px) {
+
+  .deploy .container .row.inner-container {
+    padding: 45px 80px;
+    /* margin-left: 15px;  */
+    /*per recuperare il margin tolto con la doppia row*/
+  }
+
+  .custom .deploy .row.inner-container>[class*="col-"]:first-child {
+    padding-left: 15px;
+  }
 }
 
 /* ----my-slider */
