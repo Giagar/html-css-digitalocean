@@ -149,7 +149,7 @@ nav .left-menu {
 nav .right-menu {
   width: 35%;
   text-align: right;
-  color:
+  /* color: */
 }
 
 nav label {
@@ -306,11 +306,31 @@ header .terms a {
 /* ----section: companies */
 .companies {
   background: #f3f5f9;
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 
-.companies .images-container img {
-  width: 100%;
-  /* padding: 0 5px; */
+.custom .companies .title {
+  margin: 0;
+  padding: 0 0 15px;
+  font-size: 14px;
+  color: #6F7B97;
+}
+
+.custom .companies .images-container {
+  padding: 10px 0;
+}
+
+.custom .companies .images-container img {
+  width: 49%;
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .custom .companies .images-container img {
+    width: calc(100%/6 - 4px); /*-4px perché altrimenti non rimangonon in linea (img sono inline-block)*/
+    padding: 0 5px;
+  }
 }
 
 /* ----section: deploy */
