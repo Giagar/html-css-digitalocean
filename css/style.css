@@ -526,6 +526,7 @@ link #016AFF; mhc
 /* ----section: table */
 .section-table {
   background: linear-gradient(180deg, #0b4cc2, #042597);
+  padding: 45px 0;
 }
 
 .section-table .table-responsive {
@@ -533,7 +534,12 @@ link #016AFF; mhc
 }
 
 .section-table table.table {
-  border: none !important;
+  border: none;
+}
+
+.section-table table tr td {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .section-table table tr:first-child td {
