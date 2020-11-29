@@ -496,6 +496,33 @@ header .terms a {
   }
 }
 
+/* ----section: features */
+/*
+features
+h2 #031C4E; mic
+h3 #031C4E; mic
+p #B1B8C5; msc
+link #016AFF; mhc
+ */
+.features {
+  padding: 35px 0 45px;
+}
+
+.features img {
+  margin-top: 30px;
+  width: 35px;
+}
+
+.custom .features h3 {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.features p {
+  color: #5C6B89;
+  font-size: 14px;;
+}
+
 /* ----section: table */
 .section-table {
   background: linear-gradient(180deg, #0b4cc2, #042597);
