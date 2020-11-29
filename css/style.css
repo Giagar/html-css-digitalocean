@@ -420,6 +420,18 @@ header .terms a {
   margin: 0 auto;
 }
 
+.my-slider .container {
+  padding-top: 45px;
+  padding-bottom: 20px;
+}
+
+.my-slider .container > p {
+  color: #5C6A88;
+  padding-top: 10px;
+  padding-bottom: 35px;
+  font-size: 18px;
+}
+
 /* container immagine slide */
 .my-slider .carousel-inner>.item {
   width: 80%;
