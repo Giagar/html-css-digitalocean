@@ -1,79 +1,13 @@
+/**********************************
+LEGENDA:
+
+---- nuova sezione
+inizio elemento /fine elemento
+_nuovo componente di un elemento
+
+***********************************/
+
 /* ----COMMON RULES & UTLITY CLASSES */
-* {
-  /* box-sizing: border-box; */
-}
-
-/*
-
-my-important-color: #031C4E; mic
-my-highlight-color: #016AFF; mhc
-my-subsection-color: #B1B8C5; msc
-
-navbar #031C4E; mic
-
-header
-h1 #FFFFFF;
-p #BBCBFE;
-form
-title h2 #031C4E; mic
-getstarted #016AFF; mhc
-placheolder #757575;
-google button #A3A3A3;
-terms link #4891FF;
-
-companies
-title #6F7B97;
-view link #016AFF; mhc
-
-deploy
-title h2 #031C4E; mic
-p #5C6A88;
-list #75809A;
-list border #CCCCCC;
-h3 #46567A;
-p #5C6B89; fomer msc
-
-first-slider
-h2 #031C4E; mic
-p #7B869F;
-didascalia #526282;
-chevron left #6F7B97;
-chevron right #031C4E; mic
-circles #016AFF; mhc
-
-features
-h2 #031C4E; mic
-h3 #031C4E; mic
-p #B1B8C5; msc
-link #016AFF; mhc
-
-second slider
-h2 #031C4E; mic
-q #5C6A88;
-author str #031C4E; mic
-author #616E8B;
-
-getstarted
-button #016AFF; mhc
-
-footer
-copy #8B94A9;
-made #5A6887;
-social #7A859D;
-list #A6ADBD;
-
-
-
- */
-
-.custom .bg-white {
-  background: white;
-}
-
-.custom .kill-jumbotron-margin-bottom {
-  margin-bottom: -30px;
-}
-
 .custom .important-color {
   color: #031C4E;
 }
@@ -90,18 +24,16 @@ list #A6ADBD;
   color: white;
 }
 
+.custom .bg-white {
+  background: white;
+}
+
+.custom .kill-jumbotron-margin-bottom {
+  margin-bottom: -30px;
+}
+
 a {
   color: #146cf9;
-}
-
-
- /* controlla se classe già presente in bootsrap (xs-hidden) */
-.my-md-visible {
-  display: none;
-}
-
-.my-xs-visible {
-  display: block;
 }
 
 .float-left {
@@ -138,7 +70,7 @@ nav .logo-container {
 
 nav .logo-container img {
   width: 145px;
-  vertical-align: sub; /* per allineare la base della scritta del logo alla base del testo dei link (come da screenshot) */
+  vertical-align: sub; /* per allineare la base della scritta del logo alla base del testo dei link (come da modello) */
 }
 
 nav .left-menu {
@@ -149,7 +81,6 @@ nav .left-menu {
 nav .right-menu {
   width: 35%;
   text-align: right;
-  /* color: */
 }
 
 nav label {
@@ -186,31 +117,8 @@ nav .sandwich-container {
   color: #2b88f9
 }
 
-@media screen and (min-width: 992px) {
-
-  .my-xs-visible {
-    display: none;
-  }
-  .my-md-visible {
-    display: block;
-  }
-}
-
 /* ----header */
-/*
-header
-h1 #FFFFFF;
-p #BBCBFE;
-form
-title h2 #031C4E; mic
-getstarted #016AFF; mhc
-placheolder #757575;
-google button #A3A3A3;
-terms link #4891FF;
- */
-
 .custom header .jumbotron {
-  /* height: 250px; */
   background: url("../img/bg-home.jpg") bottom;
   background-size: cover;
 }
@@ -227,10 +135,6 @@ header .title-container p {
   color: #BBCBFE;
   font-weight: 400;
   font-size: 18px;
-}
-
-header .form-container {
-  /* padding: 15px; */
 }
 
 header .form-container .inner-container {
@@ -285,7 +189,6 @@ header form .google-logo-container {
 
 header form .google-logo-container img {
   width: 100%;
-  /* vertical-align: sub; */
 }
 
 header .terms {
@@ -328,7 +231,7 @@ header .terms a {
 
 @media screen and (min-width: 768px) {
   .custom .companies .images-container img {
-    width: calc(100%/6 - 4px); /*-4px perché altrimenti non rimangonon in linea (img sono inline-block)*/
+    width: calc(100%/6 - 4px);
     padding: 0 5px;
   }
 }
@@ -396,8 +299,6 @@ header .terms a {
 
   .deploy .container .row.inner-container {
     padding: 45px 80px;
-    /* margin-left: 15px;  */
-    /*per recuperare il margin tolto con la doppia row*/
   }
 
   .custom .deploy .row.inner-container>[class*="col-"]:first-child {
@@ -405,70 +306,70 @@ header .terms a {
   }
 }
 
-/* ----my-slider */
-.my-slider .item.active {
+/* custom-slider */
+.custom-slider .item.active {
   padding: 0 20px;
 }
 
-.my-slider {
+.custom-slider {
   background: #f3f5f9;
 }
 
-.my-carousel {
+.custom-carousel {
   position: relative;
   width: 60%;
   margin: 0 auto;
 }
 
-.my-slider .container {
+.custom-slider .container {
   padding-top: 45px;
   padding-bottom: 20px;
 }
 
-.my-slider .container > p {
+.custom-slider .container > p {
   color: #5C6A88;
   padding-top: 10px;
   padding-bottom: 35px;
   font-size: 18px;
 }
 
-/* container immagine slide */
-.my-slider .carousel-inner>.item {
+/* _container immagine slide */
+.custom-slider .carousel-inner>.item {
   width: 80%;
   margin: 0 auto;
 }
 
-/* frecce slide */
-.my-slider a.left.carousel-control,
-.my-slider a.right.carousel-control {
+/* _frecce slide */
+.custom-slider a.left.carousel-control,
+.custom-slider a.right.carousel-control {
   opacity: 1;
   color: #051d4c;
   background: transparent;
 }
 
-.my-slider a.left.carousel-control {
+.custom-slider a.left.carousel-control {
   color: #707b96;
 }
 
-.my-slider a.right.carousel-control {
+.custom-slider a.right.carousel-control {
   color: #051d4c;
 }
 
-/* pallini slide */
-.my-slider .carousel-indicators {
+/* _pallini slide */
+.custom-slider .carousel-indicators {
   position: relative;
 }
 
-.my-slider .carousel-indicators li {
+.custom-slider .carousel-indicators li {
   border: 1px solid #146cf9;
 }
 
-.my-slider .carousel-indicators li.my-active {
+.custom-slider .carousel-indicators li.custom-active {
   background: #146cf9;
 }
 
-/* didascalia slide */
-.my-slider .carousel-caption {
+/* _didascalia slide */
+.custom-slider .carousel-caption {
   color: #051d4c;
   position: relative;
   left: 0;
@@ -479,31 +380,18 @@ header .terms a {
   text-shadow: none;
   font-weight: 500;
 }
+/* /custom-slider */
 
-/* !togli e metti hidden-xs su html! */
-@media screen and (max-width: 768px) {
-  .my-slider a.left.carousel-control,
-  .my-slider a.right.carousel-control {
-    visibility: hidden;
-  }
-}
 
 /* ----section: first-slider */
 @media screen and (min-width: 0px) and (max-width: 992px) {
 
-  .my-slider.first-slider .carousel-indicators {
+  .custom-slider.first-slider .carousel-indicators {
     margin-top: 70px;
   }
 }
 
 /* ----section: features */
-/*
-features
-h2 #031C4E; mic
-h3 #031C4E; mic
-p #B1B8C5; msc
-link #016AFF; mhc
- */
 .features {
   padding: 35px 0 45px;
 }
@@ -603,13 +491,6 @@ link #016AFF; mhc
 }
 
 /* ----footer */
-/*
-footer
-copy #8B94A9;
-made #5A6887;
-social #7A859D;
-list #A6ADBD;
- */
 footer {
   position: relative; /* per posizionare .help */
   background: #051e4d;
@@ -670,7 +551,6 @@ footer .help .chat {
   border-radius: 4px;
   padding: 10px 10px;
   line-height: 1.5;
-  /* display: none; */
 }
 
 /* linguetta fumetto */
@@ -700,7 +580,7 @@ footer .help .fish img {
 
   footer .help {
     left: auto;
-    right: 5%;
+    right: 3%;
   }
 
   footer .help-inner-container {
@@ -719,10 +599,6 @@ footer .help .fish img {
 
   footer .help .fish {
     right: 0;
-  }
-
-  footer .help .chat {
-    left: 0;
   }
 
 }
