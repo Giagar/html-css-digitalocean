@@ -1,4 +1,4 @@
-/* ----COMMON */
+/* ----COMMON RULES & UTLITY CLASSES */
 * {
   /* box-sizing: border-box; */
 }
@@ -668,7 +668,9 @@ footer .help .chat {
   width: 300px;
   background: white;
   border-radius: 4px;
-  padding: 14px 10px;
+  padding: 10px 10px;
+  line-height: 1.5;
+  /* display: none; */
 }
 
 /* linguetta fumetto */
@@ -685,9 +687,9 @@ footer .help .chat::after {
 /* /linguetta fumetto */
 
 footer .help .fish {
-  width: 70px;
-  height: 70px;
-  margin-bottom: 20px;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
 }
 
 footer .help .fish img {
@@ -702,8 +704,8 @@ footer .help .fish img {
   }
 
   footer .help-inner-container {
-    width: 390px;
-    height: 70px;
+    width: 380px;
+    height: 60px;
   }
 
   footer .help-inner-container .chat {
