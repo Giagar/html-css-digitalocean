@@ -615,8 +615,13 @@ footer {
   background: #051e4d;
 }
 
+footer .inner-container {
+  padding: 45px 0;
+}
+
 footer .copyright {
   color: #8B94A9;
+  padding: 10px 0;
 }
 
 footer .copyright .madein {
@@ -625,6 +630,11 @@ footer .copyright .madein {
 
 footer .social {
   color: #7B869E;
+  font-size: 20px;
+}
+
+footer .social i {
+  padding-right: 5px;
 }
 
 footer ul {
@@ -633,6 +643,15 @@ footer ul {
   list-style: none;
   color: #A6ADBD;
   /* text-align: left; */
+}
+
+footer h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+footer li {
+  padding-top: 15px;
 }
 
 footer .help {
