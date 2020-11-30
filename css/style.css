@@ -32,10 +32,6 @@ _nuovo componente di un elemento
   margin-bottom: -30px;
 }
 
-a {
-  color: #146cf9;
-}
-
 .float-left {
   float: left
 }
@@ -48,6 +44,21 @@ a {
   content: "";
   display: table;
   clear: both;
+}
+
+.google-logo::before {
+  content: url("../img/google-logo.svg");
+  background-size: cover; /*in caso di img diversa*/
+  background: center; /*in caso di img diversa*/
+  background-repeat: no-repeat; /*in caso di img diversa*/
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  left: 15px;
+}
+
+a {
+  color: #146cf9;
 }
 
 /* ----STYLE */
@@ -177,18 +188,6 @@ header form .google-btn {
   border: none;
   box-shadow: 1px 1px 2px 0px #ddd8d8;
   color: #626262;
-}
-
-header form .google-logo-container {
-  position: absolute;
-  left: 15px;
-  top: 5px;
-  height: 22px;
-  width: 22px;
-}
-
-header form .google-logo-container img {
-  width: 100%;
 }
 
 header .terms {
